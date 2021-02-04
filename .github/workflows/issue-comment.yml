@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add funny comment
-        uses: chanchan811/Lab5_PartyHorn@v1
+        uses: chan811/Lab5_PartyHorn@v1
         id: GifComment
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
