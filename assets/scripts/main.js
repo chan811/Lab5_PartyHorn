@@ -8,6 +8,7 @@ var radioCarhorn = document.getElementById("radio-car-horn");
 var radioParyHorn = document.getElementById("radio-party-horn");
 var radioForm = document.getElementById("party-horn-form");
 var hornButton = document.getElementById("honk-btn");
+var soundImage = document.getElementById("sound-image");
 
 volumeSlider.addEventListener("input", sliderVolume);
 volumeNumber.addEventListener("change",textVolume);
@@ -65,14 +66,17 @@ function diffSounds()
     if(radioAirHorn.checked)
     {
         hornSound.src = './assets/media/audio/air-horn.mp3';
+        soundImage.src = './assets/media/images/air-horn.svg';
     }
     else if(radioCarhorn.checked)
     {
         hornSound.src = './assets/media/audio/car-horn.mp3';
+        soundImage.src = './assets/media/images/car.svg';
     }
     else
     {
         hornSound.src = './assets/media/audio/party-horn.mp3';
+        soundImage.src = './assets/media/images/party-horn.svg';
     }
 }
 function playSound()
