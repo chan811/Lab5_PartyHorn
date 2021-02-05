@@ -9,7 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Add funny comment
-        uses: actions/checkout@v2
         id: GifComment
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
